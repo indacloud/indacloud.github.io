@@ -18,4 +18,38 @@ input,select{vertical-align:middle}
 
 body{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 4em 2em;
+  display: flex;
+  justify-content: center;
+  color: #16161D;
+  background-color: ghostwhite;
+  min-height: 100vh;
 }
+
+main{
+  flex: 0 1 1200px;
+}
+
+header{
+  text-align: center;
+  h1{
+    font-size: 2em;
+    margin-bottom: 1em;
+  }
+  h2{
+    color: coral;
+    margin-bottom: 0.7em;
+  }
+  .profile-picture{
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    border: 2px solid #16161D;
+    overflow: hidden;
+    margin: 0 auto;
+    img{
+      width: 100%;
+    }
+  }
+}
+
