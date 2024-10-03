@@ -52,7 +52,7 @@ main{
       text-decoration: none;
       .country-flag{
         padding-right: 0.2em;
-        
+
       }
     }
   }
@@ -84,4 +84,35 @@ header{
 
 article{
   margin: 2em 0;
+}
+
+.text-with-picture{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+
+  .picture-left{
+    flex: 0 0 200px;
+    padding: 1em;
+    > figure{
+      max-width: 200px;
+      img{
+        width: 200px;
+        border-radius: 1em;
+
+      }
+    }
+  }
+  .text-right{
+    flex: 1 1 auto;
+  }
+}
+
+.map{
+  img{
+    margin: 1em auto;
+    max-width: 90%;
+    display: block;
+  }
 }
