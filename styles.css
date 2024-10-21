@@ -31,7 +31,7 @@ main{
     margin-bottom: 1em;
   }
   p{
-    margin-bottom: 0.3em;
+    margin-bottom: 0.8em;
   }
   
   .resume-container{
@@ -114,5 +114,26 @@ article{
     margin: 1em auto;
     max-width: 90%;
     display: block;
+  }
+}
+
+.van-picts{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 90%;
+  *{
+    flex: 1 1 30%;
+    padding: 0 2.9%;
+    img{
+      max-width: 100%;
+    };
+  }
+}
+
+.lego {
+  margin: 1em 5%;
+  img{
+    max-width: 90%;
   }
 }
