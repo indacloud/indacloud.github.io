@@ -2,7 +2,7 @@
 *  html5resetcss
 */
 html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
-body{line-height:1.1}
+body{line-height:1.4}
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
 nav ul{list-style:none}
 blockquote,q{quotes:none}
@@ -19,7 +19,7 @@ input,select{vertical-align:middle}
 body{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: #16161D;
-  background-color: ghostwhite;
+  background-color: honeydew;
   min-height: 100vh;
 }
 
@@ -84,6 +84,13 @@ header{
 
 article{
   margin: 2em 0;
+  h3{
+    color: coral;
+    font-size: 1.5em;
+  }
+  img{
+    border-radius: 1em;
+  }
 }
 
 .text-with-picture{
@@ -99,8 +106,6 @@ article{
       max-width: 200px;
       img{
         width: 200px;
-        border-radius: 1em;
-
       }
     }
   }
@@ -109,7 +114,9 @@ article{
   }
 }
 
-.map{
+.map,
+.lego,
+.van-picts > figure{
   img{
     margin: 1em auto;
     max-width: 90%;
@@ -117,23 +124,18 @@ article{
   }
 }
 
-.van-picts{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  max-width: 90%;
-  *{
-    flex: 1 1 30%;
-    padding: 0 2.9%;
-    img{
-      max-width: 100%;
-    };
+ul{
+  list-style: none;
+  position: relative;
+  li:before{
+    content: ">";
+    color: coral;
+    position: absolute;
+    left: 0;
+    font-weight: bolder;
   }
-}
-
-.lego {
-  margin: 1em 5%;
-  img{
-    max-width: 90%;
+  li{
+    padding-left: 2em;
+    }
   }
 }
