@@ -93,6 +93,24 @@ article{
   }
 }
 
+.references{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  .card{
+    margin: 0 5% 1em;
+    flex: 1 0 40%;
+    padding:1em;
+    box-shadow: 0 0 1em grey;
+    border-radius: 1em;
+    box-sizing: border-box;
+    .signature{
+      text-align: right;
+    }
+  }
+}
+
 .text-with-picture{
   display: flex;
   flex-direction: row;
