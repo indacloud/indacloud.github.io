@@ -17,13 +17,13 @@ hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padd
 input,select{vertical-align:middle}
 
 :root {
-  --main-bg-color: #0B0C10;
-  --text-color: #C5C6C7;
-  --title-color: #66FCF1;
-  --border-color: #1F2823;
-  --button-color: #45A29E;
-  --button-text-color: #C5C6C7;
-  --link-color: #66FCF1;
+  --main-bg-color: #0F292F;
+  --text-color: #CCCCCC;
+  --title-color: #14A098;
+  --border-color: #501F3A;
+  --button-color: #CB2D6F;
+  --button-text-color: #CCCCCC;
+  --link-color: #CB2D6F;
 }
 
 body{
