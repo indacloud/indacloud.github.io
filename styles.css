@@ -24,7 +24,7 @@ body{
 }
 
 main{
-  padding: 4em 2em;
+  padding: 4em 2em 6em;
   max-width: 1000px;
   margin: 0 auto;
   h3{
@@ -136,6 +136,40 @@ ul{
   }
   li{
     padding-left: 2em;
-    }
+  }
+}
+#cookies{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  box-shadow: 0 0 2em 0px gray;
+  padding: 1em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  .okidoki{
+    flex: 0 0 auto;
+  }
+  .content{
+    flex: 1 1 auto;
+    text-align: center;
+  }
+  button{
+    padding: 0.3em;
+    background: cadetblue;
+    border: none;
+    border-radius: 0.2em;
+    margin: 0 2em;
+    color: ghostwhite;
+    font-size: 1.5em;
+    text-align: center;
+    cursor: pointer;
+  }
+
+
+  &.closed{
+    display: none;
   }
 }

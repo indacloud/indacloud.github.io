@@ -92,7 +92,7 @@
             <img src="img/PXL_20220209_120505789.MP.jpg" alt="Van on beach in Spain.">
           </figure>
           <figure>
-            <img src="img/PXL_20220323_103345521.MP.jpg" alt="Pretty muddy van and the cat.">
+            <img src="img/PXL_20240824_084213352.MP.jpg" alt="A car with rooftop tent and a cat.">
           </figure>
         </div>
         <figure class="map">
@@ -115,9 +115,6 @@
           <li>
             <p>I am not a nerd. Maybe a geek, I need to understand how something works. I am just curious, I always ask “how” and mostly “why”</p>
           </li>
-          <li>
-            <p>This website does not use any cookies or tracking, I'll spare you the <i>Accept Cookies</i> part 😉</i>. Nor does it use any third party library. It's just HTML and CSS.</p>
-          </li>
         </ul>
       </article>
       <article>
@@ -125,12 +122,28 @@
         <p>There are many ways, I'm pretty inactive on most of the social medias.</p>
         <p>For work, contact me through <strong><a href="https://www.linkedin.com/in/tom-brehm-11022589/">linkedin</a></strong>.</p>
       </article>
+      <div id="cookies">
+        <div class="content">
+          <p>This website does not use any cookies or tracking, I'll spare you the <i>Accept Cookies</i> part 😉</i>. Nor does it use any third party library. It's just HTML, CSS and JS.</p>
+        </div>
+        <div class="okidoki">
+          <button id="closeCookies">
+            OK!
+          </button>
+        </div>
+      </div>
     </main>
     
     <script src="" async defer></script>
     <script>
-      var styling = 'color: coral; font-size: 1.5em;'
+      const styling = 'color: coral; font-size: 1.5em;'
       console.log('%c Courious? You can see the code at https://github.com/indacloud/indacloud.github.io', styling);
+
+      const closeCookiesButton = document.querySelector('#closeCookies');  
+      closeCookiesButton.addEventListener('click', (event) => {
+        const cookiesContainer = document.querySelector('#cookies');
+        cookiesContainer.className = 'closed';
+      });
     </script>
   </body>
 </html>
