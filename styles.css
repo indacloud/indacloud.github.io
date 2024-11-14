@@ -16,10 +16,20 @@ table{border-collapse:collapse;border-spacing:0}
 hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
 input,select{vertical-align:middle}
 
+:root {
+  --main-bg-color: #0F292F;
+  --text-color: #CCCCCC;
+  --title-color: #14A098;
+  --border-color: #501F3A;
+  --button-color: #CB2D6F;
+  --button-text-color: #CCCCCC;
+  --link-color: #CB2D6F;
+}
+
 body{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: #16161D;
-  background-color: ghostwhite;
+  color: var(--text-color);
+  background-color: var(--main-bg-color);
   min-height: 100vh;
 }
 
@@ -42,11 +52,11 @@ main{
     flex-wrap: wrap;
     a{
       padding: 0.3em;
-      background: cadetblue;
+      background: var(--button-color);
       border: none;
       border-radius: 0.2em;
       margin: 1em 2em;
-      color: ghostwhite;
+      color: var(--button-text-color);
       font-size: 1.5em;
       text-align: center;
       text-decoration: none;
@@ -66,14 +76,14 @@ header{
     margin-bottom: 1em;
   }
   h2{
-    color: coral;
+    color: var(--title-color);
     margin-bottom: 0.7em;
   }
   .profile-picture{
     width: 300px;
     height: 300px;
     border-radius: 100%;
-    border: 2px solid #16161D;
+    border: 2px solid var(--border-color);
     overflow: hidden;
     margin: 0 auto;
     img{
@@ -85,11 +95,12 @@ header{
 article{
   margin: 2em 0;
   h3{
-    color: coral;
+    color: var(--title-color);
     font-size: 1.5em;
   }
   img{
     border-radius: 1em;
+    border: 2px solid var(--border-color);
   }
 }
 
@@ -109,6 +120,8 @@ article{
       text-align: right;
     }
   }
+a{
+  color: var(--link-color);
 }
 
 .text-with-picture{
@@ -147,7 +160,7 @@ ul{
   position: relative;
   li:before{
     content: ">";
-    color: coral;
+    color: var(--title-color);
     position: absolute;
     left: 0;
     font-weight: bolder;
